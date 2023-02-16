@@ -1,0 +1,13 @@
+# Esse arquivo só vai funcionar se for executado em uma cloud
+apiVersion: v1
+kind: Service
+metadata:
+  name: svc-pod-1-loadbalancer
+spec:
+  type: LoadBalancer
+  selector:
+    app: primeiro-pod
+  ports:
+    - port: 80
+      nodePort: 30500
+
