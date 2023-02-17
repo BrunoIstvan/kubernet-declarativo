@@ -2,9 +2,7 @@
 
 ## Comandos de Kubertnetes usando kubectl:
 
----
-
-## Nodes:
+### Nodes:
 
 Listar todos os nodes:
 
@@ -12,7 +10,7 @@ Listar todos os nodes:
 
 ---
 
-## Pods:
+### Pods:
 
 Listar todos os pods:
     
@@ -53,7 +51,7 @@ Excluir todos os pods ativos:
 
 ---
 
-## Services
+### Services
 
 Listar todos os services (2 modos):
 
@@ -77,7 +75,7 @@ Excluir todos os services ativos (2 modos):
 
 ---
 
-## Load Balancer
+### Load Balancer
 
 Listar todos os load balancers (2 modos):
     
@@ -99,11 +97,9 @@ Excluir todos os load balancers (2 modos):
     kubectl delete loadbalancer --all
     kubectl delete lb --all
     
-
-
 ---
 
-## ConfigMap
+### ConfigMap
 
 Listar todos os configmaps (2 modos):
 
@@ -127,7 +123,7 @@ Excluir todos os configmaps ativos (2 modos):
 
 ---
 
-## ReplicaSet
+### ReplicaSet
 
 Listar todos os replicasets (2 modos):
 
@@ -151,7 +147,7 @@ Excluir todos os replicasets (2 modos):
  
 ---
 
-## Deployments
+### Deployments
 
 Listar todos os deployments (2 modos):
 
@@ -187,7 +183,7 @@ Excluir todos os replicasets (2 modos):
 
 ---
 
-## IMPORTANTE
+### IMPORTANTE
 
 Executar a criação de todos os recursos do Kubernets de uma vez só: 
  
