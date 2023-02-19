@@ -1,0 +1,21 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: pod-volume
+spec:
+  containers:
+    - name: nginx-container-1
+      image: nginx:latest
+      volumeMounts:
+        - mountPath: /volume-dentro-do-container
+          name: primeiro-volume
+    - name: nginx-container-2
+      image: nginx:latest
+      volumeMounts:
+        - mountPath: /volume-dentro-do-container
+          name: primeiro-volume      
+  volumes:
+    - name: primeiro-volume
+      hostPath:
+        path: /Users/bruno-istvan/Desktop/primeiro-volume
+        type: DirectoryOrCreate

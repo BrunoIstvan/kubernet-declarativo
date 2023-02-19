@@ -40,6 +40,10 @@ Acessar remotamente o pod:
 
     kubectl exec -it portal-noticias -- bash
 
+Acessar um container específico dentro de um pod:
+
+    kubectl exec -it pod-volume --container nginx-container-1 -- bash
+
 Excluir um pod pelo nome do arquivo:
     
     kubectl delete -f ./alura-noticias/portal-noticias.yaml
